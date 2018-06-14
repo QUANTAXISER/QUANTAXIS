@@ -32,7 +32,7 @@ by yutiansut
 2017/4/8
 """
 
-__version__ = '1.0.39'
+__version__ = '1.0.50'
 __author__ = 'yutiansut'
 logo = ' \n \
 ```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````` \n \
@@ -47,7 +47,7 @@ logo = ' \n \
  ###```````##```##````````##```##```````````##```##```````##`##```````##````##`````````##```##```##``````##```##`````##` \n \
  `##``````###````##``````###``##`````````````##``##````````####```````##```##``````````##``###````##`````##````##`````## \n \
  ``#########``````########```##``````````````###`##``````````##```````##``##````````````##`##``````##````##`````###``### \n \
- ````````#####`````````````````````````````````````````````````````````````````````````````````````````````````````##`` \n \
+ ````````#####`````````````````````````````````````````````````````````````````````````````````````````````````````##``  \n \
  ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````` \n \
  ``````````````````````````Copyright``yutiansut``2018``````QUANTITATIVE FINANCIAL FRAMEWORK````````````````````````````` \n \
  ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````` \n \
@@ -109,8 +109,9 @@ from QUANTAXIS.QAEngine import QA_Thread, QA_Event, QA_Worker, QA_Task, QA_Engin
 from QUANTAXIS.QAData import (QA_data_tick_resample, QA_data_get_hfq, QA_data_get_qfq, QA_data_make_qfq, QA_data_stock_to_fq,
                               QA_data_make_hfq, QA_DataStruct_Stock_day, QA_DataStruct_Stock_min,
                               QA_DataStruct_Future_day, QA_DataStruct_Future_min,
-                              QA_DataStruct_Index_day, QA_DataStruct_Index_min,
-                              QA_DataStruct_Stock_transaction, QA_DataStruct_Stock_block)
+                              QA_DataStruct_Index_day, QA_DataStruct_Index_min, QA_DataStruct_Indicators,
+                              QA_DataStruct_Stock_transaction, QA_DataStruct_Stock_block,
+                              from_tushare, dsmethods, QDS_StockMinWarpper, QDS_StockDayWarpper)
 from QUANTAXIS.QAData.dsmethods import *
 # Analysis
 from QUANTAXIS.QAAnalysis import *

@@ -52,15 +52,16 @@ NAME = "quantaxis"
 """
 PACKAGES = ["QUANTAXIS", "QUANTAXIS.QAFetch", "QUANTAXIS.QACmd", "QUANTAXIS.QAMarket", 'QUANTAXIS.QAWeb',
             "QUANTAXIS.QABacktest", "QUANTAXIS.QAEngine", "QUANTAXIS.QAData", 'QUANTAXIS.QAData.proto', "QUANTAXIS.QAAnalysis",
-            "QUANTAXIS.QASU", "QUANTAXIS.QAUtil", "QUANTAXIS.QAARP", "QUANTAXIS.QAIndicator"]
+            "QUANTAXIS.QASU", "QUANTAXIS.QAUtil", "QUANTAXIS.QAARP", "QUANTAXIS.QAIndicator", "QUANTAXIS_CRAWLY"]
 """
 包含的包，可以多个，这是一个列表
 """
 
 DESCRIPTION = "QUANTAXIS:Quantitative Financial Strategy Framework"
 
+with open("README_ENG.md", "r") as fh:
+    LONG_DESCRIPTION = fh.read()
 
-LONG_DESCRIPTION = read("README.rst")
 """
 参见read方法说明
 """
@@ -112,5 +113,10 @@ setup(
     include_package_data=True,
     zip_safe=True,
 )
-
+import webbrowser
+try:
+    webbrowser.open(
+        'https://github.com/QUANTAXIS/QUANTAXIS/blob/master/CHANGELOG.md')
+except:
+    pass
 # 把上面的变量填入了一个setup()中即可。

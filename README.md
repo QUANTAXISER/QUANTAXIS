@@ -2,10 +2,12 @@
 
 
 
-[![Github workers](https://img.shields.io/github/watchers/yutiansut/quantaxis.svg?style=social&label=Watchers&)](https://github.com/yutiansut/quantaxis/watchers)
-[![GitHub stars](https://img.shields.io/github/stars/yutiansut/quantaxis.svg?style=social&label=Star&)](https://github.com/yutiansut/quantaxis/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yutiansut/quantaxis.svg?style=social&label=Fork&)](https://github.com/yutiansut/quantaxis/fork)
+[![Github workers](https://img.shields.io/github/watchers/quantaxis/quantaxis.svg?style=social&label=Watchers&)](https://github.com/quantaxis/quantaxis/watchers)
+[![GitHub stars](https://img.shields.io/github/stars/quantaxis/quantaxis.svg?style=social&label=Star&)](https://github.com/quantaxis/quantaxis/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/quantaxis/quantaxis.svg?style=social&label=Fork&)](https://github.com/quantaxis/quantaxis/fork)
 
+
+> ENGLISH DOCUMENTS PLEASE CLICK [THIS](README_ENG.md)
 
 [点击右上角Star和Watch来跟踪项目进展! 点击Fork来创建属于你的QUANTAXIS!]
 
@@ -31,7 +33,7 @@
 
 
 
-> 欢迎加群讨论: [群链接](https://jq.qq.com/?_wv=1027&k=4CEKGzn) 
+> 欢迎加群讨论: 563280067 [群链接](https://jq.qq.com/?_wv=1027&k=4CEKGzn) 
 
 > 欢迎关注公众号: ![公众号](http://osnhakmay.bkt.clouddn.com/qrcode_for_gh_bbb47e0550f7_258%20%281%29.jpg)
 
@@ -94,9 +96,13 @@ QUANTAXIS量化金融策略框架,是一个面向中小型策略团队的量化�
 - [x] 板块数据(0.5.1新增)/同花顺,通达信板块
 - [x] 基本面数据(部分 最新一期财务报表)
 - [x] 行情分发
-- [x] 循环回测
-- [x] 回测管理优化(新增回测主题/版本号)
-
+- [x] 自定义账户类/组合类/用户类
+- [x] 自定义市场类/可接入的下单接口(BROKER)
+- [x] 分布式数据库连接(mongodb集群)/带权限数据库
+- [x] 用户分析模块/风控,表现插件
+- [x] 指标类(1.0.42新增)
+- [x] 成交记录分析器
+- [x] T0交易(股票日内做T)回测分析框架(1.0.46)
 
 预计实现:
 
@@ -106,7 +112,7 @@ QUANTAXIS量化金融策略框架,是一个面向中小型策略团队的量化�
 - [ ] 分析模块(行情分析/板块分析)
 - [ ] 多数据库支持
 - [ ] 权限管理
-- [ ] 成交记录分析器
+
 
 - [QUANTAXIS 2018开发计划表](job_list.md)
 
@@ -115,14 +121,29 @@ QUANTAXIS量化金融策略框架,是一个面向中小型策略团队的量化�
 
 文档参见: [book](http://book.yutiansut.com)
 
-下载文档手册 
+下载文档手册(实时更新)
 
 [PDF](https://www.gitbook.com/download/pdf/book/quantaxis/quantaxis) | [MOBI](https://www.gitbook.com/download/mobi/book/quantaxis/quantaxis) | [EPUB](https://www.gitbook.com/download/epub/book/quantaxis/quantaxis)
 
 ##  3. <a name='-1'></a>安装和部署
 
+直接上手~
+
+```
+pip install quantaxis -U
+```
+
+本地安装
 ```
 git clone https://github.com/yutiansut/quantaxis --depth 1
+```
+
+代码提交式安装 代码提交参见  [代码提交](https://github.com/QUANTAXIS/QUANTAXIS/blob/master/Documents/about_pr.md)
+
+- fork QUANTAXIS 到你的github账户
+
+```
+git clone https://github.com/你的账户名/quantaxis
 ```
 
 参见 [安装说明](Documents/install.md)
@@ -136,11 +157,11 @@ git clone https://github.com/yutiansut/quantaxis --depth 1
 参见 
 
 
-* [QUANTAXIS的使用示例](https://github.com/yutiansut/QADemo)
+* [QUANTAXIS的使用示例](https://github.com/quantaxis/QADemo)
 
 * [QUANTAXIS回测API](Documents/backtest_api.md)
 * [QUANTAXIS的数据结构](Documents/DataStruct.md)
-* [QUANTAXIS指标系统](Documents/indicators.md)
+* [QUANTAXIS指标系统及指标类](Documents/indicators.md)
 * [QUANTAXIS的数据获取指南](Documents/DataFetch.md)
 * [QUANTAXIS行情研究](Documents/analysis.md)
 * [QUANTAXIS回测分析](Documents/backtestanalysis.md)
