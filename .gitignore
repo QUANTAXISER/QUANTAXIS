@@ -1,6 +1,7 @@
 
 # Self-defined ignore
-
+_data_/
+_notebooks_/
 *.pyc
 node_modules/
 .vscode/
@@ -153,10 +154,13 @@ kernel*.json
 
 
 *.dad
-
+*.cover
 
 #future connections
 
 *.con
 /QUANTAXIS_Test/QAFetch_Test/data/
 *.sqlite_db
+
+selenium_driver/*
+QUANTAXIS_WEBDRIVER/*
